@@ -1,0 +1,84 @@
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.navigation-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ddd;
+}
+
+.station-name {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: black; /* Set text color to black */
+}
+
+.station-indicator {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.map-section {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.map-placeholder {
+  width: 80%;
+  height: 200px;
+  background-color: #e6e6e6;
+  border: 1px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #666;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.back-button {
+  background-color: #6c757d; /* Gray color for back button */
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}

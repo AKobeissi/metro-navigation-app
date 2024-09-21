@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Search.css';
 import BottomNavBar from './BottomNavBar';
 
 function Search() {
@@ -8,7 +9,7 @@ function Search() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate('/navigation', { state: { station } });
+    navigate('/select-station', { state: { station } });
   };
 
   return (

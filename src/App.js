@@ -3,6 +3,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Search from './components/Search';
+import SelectStation from './components/SelectStation';
+import EnterOrLeave from './components/EnterOrLeave';
+import Saves from './components/Saves';
 import Navigation from './components/Navigation';
 import './App.css';
 
@@ -12,7 +15,10 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/saves" element={<Saves />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/select-station" element={<SelectStation />} />
+          <Route path="/enter-or-leave" element={<EnterOrLeave />} />
           <Route path="/navigation" element={<Navigation />} />
         </Routes>
       </div>
